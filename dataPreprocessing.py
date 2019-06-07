@@ -7,8 +7,8 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('Data.csv')
-X = dataset.iloc[:, :-1].values #independent variables(First 3 columns)
-y = dataset.iloc[:, 3].values #dependent variables (Last Column)
+X = dataset.iloc[:, :-1].values #independent variables
+y = dataset.iloc[:, 3].values #dependent variables
 
 # Handling Missing data by filling it with column mean
 from sklearn.preprocessing import Imputer
